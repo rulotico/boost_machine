@@ -16,14 +16,15 @@
 
 <script>
 import foot1 from '../assets/slack.png';
+
 export default {
-  name:'Footer',
-  data(){
-    return{
-      img:foot1
-    }
-  }
-}
+  name: 'Footer',
+  data() {
+    return {
+      img: foot1,
+    };
+  },
+};
 </script>
 
 <style lang="css" scoped>

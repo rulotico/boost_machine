@@ -2,7 +2,7 @@
   <div class="readBack-container">
     <div class="readBack">
         You can try another book,
-        <a href="#">
+        <a href="/">
           <strong> Go Home</strong>
         </a>
     </div>
@@ -11,8 +11,8 @@
 
 <script>
 export default {
-  name:'readBack'
-}
+  name: 'readBack',
+};
 </script>
 
 <style lang="css" scoped>

@@ -1,4 +1,4 @@
-# website
+# boost_machine
 
 ## Project setup
 ```

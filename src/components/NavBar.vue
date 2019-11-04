@@ -1,13 +1,13 @@
 <template>
-  <nav>
+  <nav class="animated fadeInDown">
     <div class="logo">
-      <img :src="img" alt="">
+      <a href="/">
+        <img :src="img" alt="">
+      </a>
     </div>
     <ul class="options">
       <li>
-        <a href="#">
-        Us
-        </a>
+        <router-link to="/about">About</router-link>
       </li>
       <li>
         <LenguageSwitcher />
@@ -17,18 +17,19 @@
 </template>
 
 <script>
-import LenguageSwitcher from './LenguageSwitcher.vue'
+import LenguageSwitcher from './LenguageSwitcher.vue';
+
 export default {
   name: 'NavBar',
-  components:{
-    LenguageSwitcher
+  components: {
+    LenguageSwitcher,
   },
-  data(){
-    return{
-      img:"logo.png"
-    }
-  }
-}
+  data() {
+    return {
+      img: 'logo.png',
+    };
+  },
+};
 </script>
 
 <style>

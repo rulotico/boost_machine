@@ -1,23 +1,26 @@
 <template lang="html">
     <div class="">
       <h1>{{ title }}</h1>
-      <div class="icon">
-        <!-- <img :src="icon" alt=""> -->
-      </div>
+      <!-- <div class="icon">
+        <img :src="icon" alt="">
+      </div> -->
     </div>
 </template>
 
 <script>
 import icon from '../assets/big_icon.png';
+
 export default {
-  name:'Title',
-  data(){
-    return{
-      title:"The knowledge you need for Software development",
-      icon:icon
-    }
-  }
-}
+  name: 'Title',
+  data() {
+    return {
+      icon,
+    };
+  },
+  props: {
+    title: String,
+  },
+};
 </script>
 
 <style lang="css" scoped>

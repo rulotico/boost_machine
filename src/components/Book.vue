@@ -1,5 +1,5 @@
 <template lang="html">
-  <article class="book">
+  <article class="book animated fadeIn">
     <div class="feature">
       <div class="text-feature">
         System testing configuration
@@ -27,8 +27,8 @@
 
 <script>
 export default {
-  name:'Book'
-}
+  name: 'Book',
+};
 </script>
 
 <style lang="css" scoped>

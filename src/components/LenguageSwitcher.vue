@@ -13,18 +13,18 @@
 </template>
 
 <script>
-export default{
-  name:"LenguageSwitcher",
-  methods:{
-    changeLeng: function(){
+export default {
+  name: 'LenguageSwitcher',
+  methods: {
+    changeLeng() {
       if (this.active) {
         this.$emit('false');
-      }else{
+      } else {
         this.$emit('true');
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style>

@@ -1,28 +1,21 @@
 <template lang="html">
     <article class="cardInfo">
       <h1 class="title">
-        Who we are?
+        {{ title }}
       </h1>
-      <p>
-        All the knowledge of the design system process and how to do it you can said that its cool buy anyhow.
-      </p>
-      <p>All the knowledge of the design system process and how to do it you can said that its cool buy anyhow.</p>
-      <p>
-        All the knowledge of the design system process and how to do it you can said that its cool buy anyhow.
-      </p>
-      <p>
-        All the knowledge of the design system process and how to do it you can said that its cool buy anyhow.
-      </p>
-      <p>
-        All the knowledge of the design system process and how to do it you can said that its cool buy anyhow.
-      </p>
+      <p>{{content}}</p>
+
     </article>
 </template>
 
 <script>
 export default {
-  name:'CardInfo'
-}
+  name: 'CardInfo',
+  props: {
+    title: String,
+    content: String,
+  },
+};
 </script>
 
 <style lang="css" scoped>
