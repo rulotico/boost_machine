@@ -1,9 +1,11 @@
 <template>
   <div class="home">
-    <Title title="The knowledge you need for Software Development." />
-     <Book />
-     <Book />
-     <Book />
+     <Title title="The knowledge you need for Software Development." />
+     <router-link to="/design"><Book /></router-link>
+     <router-link to="/design"><Book /></router-link>
+     <router-link to="/design"><Book /></router-link>
+     <router-link to="/design"><Book /></router-link>
+     <router-link to="/design"><Book /></router-link>
   </div>
 </template>
 

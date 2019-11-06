@@ -3,7 +3,6 @@
     <NavBar />
     <Header />
     <div class="container">
-      <OpenBook title="Design system"/>
       <router-view/>
     </div>
     <readBack />
@@ -18,7 +17,6 @@ import Header from '@/components/Header.vue';
 import readBack from '@/components/readBack.vue';
 import Footer from '@/components/Footer.vue';
 
-import OpenBook from '@/components/OpenBook.vue';
 
 export default {
   name: 'home',
@@ -27,7 +25,6 @@ export default {
     Header,
     readBack,
     Footer,
-    OpenBook,
   },
 };
 </script>
@@ -83,4 +80,18 @@ export default {
       text-align: center;
       color: #2c3e50;
     }
+    @media (min-width:800px) {
+      .container , .readBack-container{
+        max-width:800px;
+        margin:auto;
+      }
+      footer{
+        height: calc(var(--spacing)*6);
+        padding: 8em var(--spacing) var(--spacing) var(--spacing) !important;
+      }
+      footer p , footer{
+        text-align: center !important;
+      }
+    }
+
 </style>

@@ -1,6 +1,6 @@
 <template lang="html">
 
-  <article class="openBook">
+  <article class="openBook animated fadeInUp">
       <div class="content_book">
         <h1>{{title}}</h1>
         <small>7 Temas  |  Lectura 30 minutos </small><br>
@@ -24,6 +24,35 @@
         <p>Content</p>
         <h2>5.Design and defining</h2>
         <p>Content</p>
+      </div>
+      <hr>
+      <div class="content_book">
+        <h2>Authors</h2>
+        <div class="autor">
+          <img src="@/assets/autor.png" alt="">
+          <p>
+            <span class="name">Rulótico Gonzalez</span>
+            <br>
+            <span class="prof">Founder Sable Studio</span>
+          </p>
+        </div>
+        <div class="autor">
+          <img src="@/assets/autor.png" alt="">
+          <p>
+            <span class="name">Rulótico Gonzalez</span>
+            <br>
+            <span class="prof">Founder Sable Studio</span>
+          </p>
+        </div>
+        <div class="autor">
+          <img src="@/assets/autor.png" alt="">
+          <p>
+            <span class="name">Rulótico Gonzalez</span>
+            <br>
+            <span class="prof">Founder Sable Studio</span>
+          </p>
+        </div>
+        <h2 class="final">Thanks for learning ❤️</h2>
       </div>
   </article>
 
@@ -52,5 +81,22 @@ small{
   background-color: var(--white-color);
   box-shadow: var(--shadow);
   border-radius: 2px;
+}
+.autor{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.autor img{
+  height: 4em;
+  margin-right: var(--spacing);
+}
+
+.autor .name{
+  color: var(--black-color);
+}
+.final{
+  text-align: center;
 }
 </style>

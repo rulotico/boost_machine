@@ -1,7 +1,7 @@
 <template lang="html">
   <footer>
     <p>You can meet us in
-      <a href="https://hnmexico.herokuapp.com/">
+      <a href="https://hnmexico.herokuapp.com/" target="_blank">
         <strong>Hacker News México</strong>
         <span class="slack-img">
           <img :src="img" alt="">
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import foot1 from '../assets/slack.png';
+import foot1 from '../assets/slack.svg';
 
 export default {
   name: 'Footer',

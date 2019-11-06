@@ -1,14 +1,14 @@
 <template lang="html">
     <div class="">
       <h1>{{ title }}</h1>
-      <!-- <div class="icon">
-        <img :src="icon" alt="">
-      </div> -->
+      <div class="icon animated fadeIn">
+        <img :src="icon" alt="" v-if="[':name'].includes($route.name)">
+      </div>
     </div>
 </template>
 
 <script>
-import icon from '../assets/big_icon.png';
+import icon from '../assets/big_icon.svg';
 
 export default {
   name: 'Title',
