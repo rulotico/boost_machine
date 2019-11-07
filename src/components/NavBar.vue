@@ -10,6 +10,9 @@
         <router-link to="/about">About</router-link>
       </li>
       <li>
+        <a href="/">Workshops</a>
+      </li>
+      <li>
         <LenguageSwitcher />
       </li>
     </ul>

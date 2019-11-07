@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <Title title=""/>
+    <Title />
     <OpenBook title="Design system"/>
   </div>
 </template>

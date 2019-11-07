@@ -1,8 +1,8 @@
 <template lang="html">
     <div class="">
       <h1>{{ title }}</h1>
-      <div class="icon animated fadeIn">
-        <img :src="icon" alt="" v-if="[':name'].includes($route.name)">
+      <div class="icon animated fadeIn" v-if="[':name'].includes($route.name)">
+        <img :src="icon" alt="" >
       </div>
     </div>
 </template>
