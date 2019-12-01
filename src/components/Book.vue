@@ -1,6 +1,6 @@
 <template lang="html">
   <article class="book animated fadeIn">
-    <div class="feature" v-bind:style="{ backgroundImage: 'url(' + img + ')' }">
+    <div class="feature" :style="{ backgroundImage: `url(${img})` }" >
       <div class="text-feature">
         {{title}}
       </div>
@@ -12,26 +12,25 @@
 
     <div class="info">
       <h3>{{description}}</h3>
-      <ul>
-        <li>Design and defining</li>
-        <li>Construct the system</li>
-        <li>Appeal the perfect</li>
-        <li>Procedural definition</li>
-        <li>Know How</li>
-        <li>Simple as that</li>
+      <ul id="example-1">
+        <ul v-for="item in themes" :key="item">
+          <li>{{ item }}</li>
+        </ul>
       </ul>
-
     </div>
   </article>
 </template>
 
 <script>
+
 export default {
+
   name: 'Book',
   props: {
     title: String,
     description: String,
     img: String,
+    themes: Array,
   },
 };
 </script>
@@ -60,8 +59,8 @@ export default {
     border-radius: var(--radius);
   }
   .feature{
-    /* background-color: salmon; */
-    background:  center center;
+    background-color: var(--black-color) !important;
+    /* background-image: url('~@/assets/book.png'); */
     background-size: cover;
     border-radius:var(--radius) 0 0 var(--radius);
     font-weight: bold;

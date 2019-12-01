@@ -1,8 +1,23 @@
 <template>
   <div class="home">
-     <Title title="The knowledge you need for Software Development." />
+     <Title title="The knowledge you need for Software Development" />
      <router-link to="/design">
-       <Book title="Design system collaboration framework" description="A" img="book.png"/>
+
+       <Book
+        title="Design system collaboration workflow"
+        description="Process, stylish and control frames"
+        img="book.png"
+        v-bind:themes="[
+        'Design and defining',
+        'Construct the system',
+        'Appeal the perfect',
+        'Procedural definition',
+        'Know How',
+        'Simple as that'
+        ]"
+        />
+
+
      </router-link>
 
   </div>
