@@ -1,6 +1,7 @@
 <template lang="html">
   <article class="book animated fadeIn">
-    <div class="feature" :style="{ backgroundImage: `url(${img})` }" >
+    <div class="feature"
+      :style="{'background-image': 'url(' + require('../assets/covers/'+ imagebook +'') + ')'}" >
       <div class="text-feature">
         {{title}}
       </div>
@@ -25,11 +26,12 @@
 
 export default {
 
+
   name: 'Book',
   props: {
     title: String,
     description: String,
-    img: String,
+    imagebook: String,
     themes: Array,
   },
 };

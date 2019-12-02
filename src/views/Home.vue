@@ -6,7 +6,7 @@
        <Book
         title="Design system collaboration workflow"
         description="Process, stylish and control frames"
-        img="book.png"
+        imagebook="book1.png"
         v-bind:themes="[
         'Design and defining',
         'Construct the system',
@@ -16,6 +16,34 @@
         'Simple as that'
         ]"
         />
+
+        <Book
+         title="Design system collaboration workflow"
+         description="Process, stylish and control frames"
+         imagebook="book2.png"
+         v-bind:themes="[
+         'Design and defining',
+         'Construct the system',
+         'Appeal the perfect',
+         'Procedural definition',
+         'Know How',
+         'Simple as that'
+         ]"
+         />
+
+         <Book
+          title="Design system collaboration workflow"
+          description="Process, stylish and control frames"
+          imagebook="book.png"
+          v-bind:themes="[
+          'Design and defining',
+          'Construct the system',
+          'Appeal the perfect',
+          'Procedural definition',
+          'Know How',
+          'Simple as that'
+          ]"
+          />
 
 
      </router-link>
@@ -29,6 +57,8 @@ import Book from '@/components/Book.vue';
 import Title from '@/components/Title.vue';
 
 export default {
+
+
   name: 'home',
   components: {
     Book,
